@@ -7,7 +7,8 @@ var agent = new http.Agent({ family: 6 });
 const X_AUTH_EMAIL = process.env.X_AUTH_EMAIL
 const X_AUTH_KEY = process.env.X_AUTH_KEY
 const ZONE_ID_1 = process.env.ZONE_ID_1 // aravindweb.com
-const ROW_ID_1_1 = process.env.ROW_ID_1_1 // seeker-ubuntu6
+const ROW_ID_1_1 = process.env.ROW_ID_1_1 // try4.aravindweb.com
+const ROW_ID_1_2 = process.env.ROW_ID_1_2 // try6.aravindweb.com
 
 
 const headers = {
@@ -58,7 +59,7 @@ const update_dns_ipv6 = async (headers,zone_id,zone_record_id,name)=>{
 
 
 //update try4 ipv4
-// update_dns(headers,ZONE_ID_1,ROW_ID_1_1,"try4.aravindweb.com");
+update_dns(headers,ZONE_ID_1,ROW_ID_1_1,"try4.aravindweb.com");
 
-//update seeker-ubuntu6 ipv6
-update_dns_ipv6(headers,ZONE_ID_1,ROW_ID_1_1,"seeker-ubuntu6.aravindweb.com");
+//update try6 ipv6
+update_dns_ipv6(headers,ZONE_ID_1,ROW_ID_1_2,"try6.aravindweb.com");

@@ -8,6 +8,8 @@
 
 `cd dns_updater`
 
+`npm i`
+
 * create dev.env and enter all variables there
 
 ### Example
